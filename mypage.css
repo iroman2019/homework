@@ -1,0 +1,20 @@
+h1 {
+	color: #4CAF50;
+}
+body {
+	background-color: Beige;
+	margin: 70px;
+}
+div {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+}
+input:not([type="submit"]) {
+    border: 1px solid black;
+}
+
+input:not([type="submit"]):focus{
+    border: 3px solid green;
+}
