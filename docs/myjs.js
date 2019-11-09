@@ -11,8 +11,8 @@ function classify(a, b, c) {
 
         if (a <= 0 || b <= 0 || c <= 0) return "Negatív";
         if (a == b && b == c) return "Egyenlő oldalú";
-        if (a >= b+c || c >= b+a || b >= a+c) return "Nem háromszög";
-        if (b==c || a==b || b==c) return "Egyenlő oldalú";
+        if (parseInt(a) >= parseInt(b)+parseInt(c) || parseInt(c) >= parseInt(b)+parseInt(a) || parseInt(b) >= parseInt(a)+parseInt(c)) return "Nem háromszög";
+        if (b==c || a==b || a==c) return "Egyenlő szárú";
         return "Általános";
 }
 
