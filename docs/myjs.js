@@ -9,9 +9,13 @@ function classify(a, b, c) {
             return "Harmadik nem szám";
         }
 
+        a_number=parseInt(a);
+        b_number=parseInt(b);
+        c_number=parseInt(c);
+
         if (a <= 0 || b <= 0 || c <= 0) return "Negatív";
         if (a == b && b == c) return "Egyenlő oldalú";
-        if (parseInt(a) >= parseInt(b)+parseInt(c) || parseInt(c) >= parseInt(b)+parseInt(a) || parseInt(b) >= parseInt(a)+parseInt(c)) return "Nem háromszög";
+        if (a_number >= b_number+c_number || parseInt(c) >= b_number+a_number || parseInt(b) >= a_number+c_number) return "Nem háromszög";
         if (b==c || a==b || a==c) return "Egyenlő szárú";
         return "Általános";
 }

@@ -42,11 +42,11 @@ c_input.clear()
 # Negatív
 a_input.send_keys(10)
 b_input.send_keys(-2)
-c_input.send_keys(-3)
+c_input.send_keys(4)
 calculate_button.click()
 last_li = driver.find_element(By.XPATH, "//li[last()]").text
 print(last_li)
-assert last_li == "a = 10, b = -2, c = -3: Negatív"
+assert last_li == "a = 10, b = -2, c = 4: Negatív"
 driver.save_screenshot("negativ.png")
 
 # Törölni kell, mert a következő teszt hozzáfüzné a korábbi értékekhez az új számokat
