@@ -91,5 +91,5 @@ c_input.send_keys(8)
 calculate_button.click()
 last_li = driver.find_element(By.XPATH, "//li[last()]").text
 print(last_li)
-assert last_li == "a = 20, b = 5, c = 10: Általános"
+assert last_li == "a = 10, b = 5, c = 8: Általános"
 driver.save_screenshot("standard.png")
