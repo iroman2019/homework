@@ -17,4 +17,5 @@ calculate_button.click()
 last_li = driver.find_element(By.XPATH, "//li[last()]").text
 print(last_li)
 assert last_li == "a = 3, b = 3, c = 3: Egyenlő oldalú"
+driver.save_screenshot("result.png")
 
